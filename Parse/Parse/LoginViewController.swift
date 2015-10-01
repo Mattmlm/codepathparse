@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,14 +44,14 @@ class LoginViewController: UIViewController {
                 // Do stuff after successful login.
             } else {
                 // The login failed. Check error to see why.
-                self.throwErrorAlert("Sign In error")
+                self.throwErrorAlert("Sign In error", errorDescription: error!.userInfo["error"] as! String);
             }
         }
     }
     
     @IBAction func signupButtonPressed(sender: AnyObject) {
         var user = PFUser()
-        user.username = "codepathtesting1"
+        user.username = usernameTextField.text!
         user.password = passwordTextField.text!
         user.email = emailTextField.text!
         // other fields can be set just like with PFObject
@@ -59,17 +60,17 @@ class LoginViewController: UIViewController {
         user.signUpInBackgroundWithBlock {
             (succeeded: Bool, error: NSError?) -> Void in
             if let error = error {
-                let errorString = error.userInfo["error"] as? NSString
+                let errorString = error.userInfo["error"] as? String
                 // Show the errorString somewhere and let the user try again.
-                self.throwErrorAlert("Sign Up error")
+                self.throwErrorAlert("Sign Up error", errorDescription: errorString!);
             } else {
                 // Hooray! Let them use the app now.
             }
         }
     }
     
-    func throwErrorAlert(error: String) {
-        let alert: UIAlertController = UIAlertController(title: error, message: "There is an error", preferredStyle: .Alert)
+    func throwErrorAlert(errorTitle: String, errorDescription: String ) {
+        let alert: UIAlertController = UIAlertController(title: errorTitle, message: errorDescription, preferredStyle: .Alert)
         let defaultAction = UIAlertAction(title: "OK", style: .Default) { (action) -> Void in
             //
         }
