@@ -17,7 +17,7 @@
 
 /* Begin PBXFileReference section */
 		340AF09340FEB992B7A7BE71 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		842541E61BBCCD1B00BE4208 /* Parse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		842541E61BBCCD1B00BE4208 /* Codepath Parse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codepath Parse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		842541E91BBCCD1B00BE4208 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		842541EB1BBCCD1B00BE4208 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		842541EE1BBCCD1B00BE4208 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		842541E71BBCCD1B00BE4208 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				842541E61BBCCD1B00BE4208 /* Parse.app */,
+				842541E61BBCCD1B00BE4208 /* Codepath Parse.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		842541E51BBCCD1B00BE4208 /* Parse */ = {
+		842541E51BBCCD1B00BE4208 /* Codepath Parse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 842541F81BBCCD1B00BE4208 /* Build configuration list for PBXNativeTarget "Parse" */;
+			buildConfigurationList = 842541F81BBCCD1B00BE4208 /* Build configuration list for PBXNativeTarget "Codepath Parse" */;
 			buildPhases = (
 				D56E9659F15DC52C39A9337D /* Check Pods Manifest.lock */,
 				842541E21BBCCD1B00BE4208 /* Sources */,
@@ -106,9 +106,9 @@
 			);
 			dependencies = (
 			);
-			name = Parse;
+			name = "Codepath Parse";
 			productName = Parse;
-			productReference = 842541E61BBCCD1B00BE4208 /* Parse.app */;
+			productReference = 842541E61BBCCD1B00BE4208 /* Codepath Parse.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 842541E11BBCCD1B00BE4208 /* Build configuration list for PBXProject "Parse" */;
+			buildConfigurationList = 842541E11BBCCD1B00BE4208 /* Build configuration list for PBXProject "Codepath Parse" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -138,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				842541E51BBCCD1B00BE4208 /* Parse */,
+				842541E51BBCCD1B00BE4208 /* Codepath Parse */,
 			);
 		};
 /* End PBXProject section */
@@ -325,7 +325,7 @@
 				INFOPLIST_FILE = Parse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattmo.Parse;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Codepath Parse";
 			};
 			name = Debug;
 		};
@@ -337,14 +337,14 @@
 				INFOPLIST_FILE = Parse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattmo.Parse;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Codepath Parse";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		842541E11BBCCD1B00BE4208 /* Build configuration list for PBXProject "Parse" */ = {
+		842541E11BBCCD1B00BE4208 /* Build configuration list for PBXProject "Codepath Parse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				842541F61BBCCD1B00BE4208 /* Debug */,
@@ -353,7 +353,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		842541F81BBCCD1B00BE4208 /* Build configuration list for PBXNativeTarget "Parse" */ = {
+		842541F81BBCCD1B00BE4208 /* Build configuration list for PBXNativeTarget "Codepath Parse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				842541F91BBCCD1B00BE4208 /* Debug */,
